@@ -10,9 +10,16 @@
     <form id="form1" runat="server">
     <div>
     
+        ID(to edit old data):
+    
+        <asp:TextBox ID="tbID" runat="server"></asp:TextBox>
+    
+    </div>
+    <div>
+    
         Name:
     
-        <asp:TextBox ID="tbName" runat="server"></asp:TextBox>
+        <asp:TextBox ID="tbName" runat="server" OnTextChanged="tbName_TextChanged"></asp:TextBox>
     
     </div>
         <p>

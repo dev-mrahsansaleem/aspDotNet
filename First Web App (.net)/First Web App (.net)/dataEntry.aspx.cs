@@ -92,12 +92,47 @@ namespace First_Web_App__.net_
 
                         email = TBemail.Text;//email accepted
 
-                        if(con.State==ConnectionState.Closed)
-                            con.Close();
-                        con.Open();
-                        SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name],[fatherName],[email],[phoneNo],[address],[gender],[religin],[dateOfBirth],[maritalStatus],[qualification]) VALUES ('" + name + "','" + fatherName + "','" + email + "','" + phoneNo + "','" + address + "','" + gender + "','" + religin + "','" + dateOfBirth + "','" + maritalStatus + "','" + qualification + "')", con);
-                        //SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name]) VALUES ('"+name+"')", con);
-                        cmd.ExecuteNonQuery();
+
+                        if(tbID.Text.Trim()=="")
+                        {
+                            //insert
+                            if (con.State == ConnectionState.Closed)
+                                con.Close();
+                            try
+                            {
+                                con.Open();
+                                SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name],[fatherName],[email],[phoneNo],[address],[gender],[religin],[dateOfBirth],[maritalStatus],[qualification]) VALUES ('" + name + "','" + fatherName + "','" + email + "','" + phoneNo + "','" + address + "','" + gender + "','" + religin + "','" + dateOfBirth + "','" + maritalStatus + "','" + qualification + "')", con);
+                                //SqlCommand cmd = new SqlCommand("Insert INTO [QuizDB].[dbo].[inputDataTable] ([name]) VALUES ('"+name+"')", con);
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                            }
+                            catch
+                            {
+                                lblOut.Text = "data is unable to insert an error ouccered";
+                            }
+                            //^^^^^^^^^^^^^^^^^ data enter in database
+
+                        }
+                        else
+                        {
+                            //update that id's record
+                            if (con.State == ConnectionState.Closed)
+                                con.Close();
+                            try
+                            {
+                                con.Open();
+                                SqlCommand cmd = new SqlCommand("UPDATE [QuizDB].[dbo].[inputDataTable] SET [name]='" + name + "',[fatherName]='" + fatherName + "',[email]='" + email + "',[phoneNo]='" + phoneNo + "',[address]='" + address + "',[gender]='" + gender + "',[religin]='" + religin + "',[dateOfBirth]='" + dateOfBirth + "',[maritalStatus]='" + maritalStatus + "',[qualification]='" + qualification + "' WHERE [id] = '" + tbID.Text.Trim() + "'", con);
+                                cmd.ExecuteNonQuery();
+                                con.Close();
+                            }
+                            catch
+                            {
+                                lblOut.Text = "data is unable to update an error ouccered";
+                            }
+                        }
+
+
+                        //show data on grid
                         try
                         {
                             SqlCommand cmdd = new SqlCommand("Select * FROM [QuizDB].[dbo].[inputDataTable]", con);
@@ -107,10 +142,8 @@ namespace First_Web_App__.net_
                         }
                         catch
                         {
-                            lblOut.Text = "No Record Found";
+                            lblOut.Text = "No Record Found in database";
                         }
-                        con.Close();
-                        //^^^^^^^^^^^^^^^^^ data enter in database
 
                     }
                     catch
