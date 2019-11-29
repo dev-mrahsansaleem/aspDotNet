@@ -69,7 +69,10 @@
             <asp:Button ID="btnReset" runat="server" Height="61px" OnClick="btnReset_Click" Text="Reset" Width="130px" ForeColor="#4A3C8C" />
             <asp:Button ID="btnSubmit" runat="server" Height="60px" OnClick="btnSubmit_Click" Text="Submit" Width="130px" ForeColor="#4A3C8C" />
         </p>
-        <asp:GridView ID="GridView1" runat="server" Height="182px" Width="660px" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" Height="182px" Width="660px" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" AutoGenerateColumns="False" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <Columns>
+                <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Delete" ShowHeader="True" Text="Delete this record" />
+            </Columns>
             <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
             <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
