@@ -116,7 +116,7 @@ namespace First_Web_App__.net_
                         else
                         {
                             //update that id's record
-                            if (con.State == ConnectionState.Closed)
+                            if (con.State == ConnectionState.Open)
                                 con.Close();
                             try
                             {
@@ -133,8 +133,11 @@ namespace First_Web_App__.net_
 
 
                         //show data on grid
+                        if (con.State == ConnectionState.Open)
+                            con.Close();
                         try
                         {
+                            con.Open();
                             SqlCommand cmdd = new SqlCommand("Select * FROM [QuizDB].[dbo].[inputDataTable]", con);
                             SqlDataReader dr = cmdd.ExecuteReader();
                             GridView1.DataSource = dr;

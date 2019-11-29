@@ -18,3 +18,23 @@ E:\git hub\First Web App (.net)\First Web App (.net)\bin\Microsoft.CodeDom.Provi
 E:\git hub\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).csprojResolveAssemblyReference.cache
 E:\git hub\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).dll
 E:\git hub\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).pdb
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\csc.exe
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\System.Collections.Immutable.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\System.Reflection.Metadata.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\vbc.exe
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\VBCSCompiler.exe
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\roslyn\VBCSCompiler.exe.config
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\First Web App (.net).dll.config
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\First Web App (.net).dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\First Web App (.net).pdb
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).csprojResolveAssemblyReference.cache
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).dll
+E:\git hub\ASP Dot net\aspDotNet\First Web App (.net)\First Web App (.net)\obj\Debug\First Web App (.net).pdb
